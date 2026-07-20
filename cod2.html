@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cod #2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Nunito:wght@400;800;900&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Nunito', sans-serif;
+    }
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 40px 32px;
+      max-width: 360px;
+      width: 92%;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+      animation: pop 0.5s cubic-bezier(.34,1.56,.64,1) both;
+    }
+    @keyframes pop {
+      from { transform: scale(0.7); opacity: 0; }
+      to   { transform: scale(1); opacity: 1; }
+    }
+    .emoji { font-size: 5rem; margin-bottom: 16px; display: block; }
+    .message {
+      font-family: 'Permanent Marker', cursive;
+      font-size: clamp(1.8rem, 7vw, 2.5rem);
+      color: #0077b6;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .temp {
+      display: inline-block;
+      background: #00b4d8;
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="emoji">🥶</span>
+    <div class="message">Rece.<br/>Foarte rece.</div>
+    <span class="temp">temperatura: arctic</span>
+  </div>
+</body>
+</html>

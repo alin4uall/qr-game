@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cod #4</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #fff8e7;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Quicksand', sans-serif;
+    }
+    .card {
+      text-align: center;
+      padding: 40px 32px;
+      max-width: 380px;
+      width: 92%;
+      border: 3px dashed #f4a261;
+      border-radius: 20px;
+      background: white;
+      animation: wobble 0.6s cubic-bezier(.34,1.56,.64,1) both;
+    }
+    @keyframes wobble {
+      0%   { transform: rotate(-2deg) scale(0.9); opacity: 0; }
+      60%  { transform: rotate(1deg) scale(1.02); }
+      100% { transform: rotate(0deg) scale(1); opacity: 1; }
+    }
+    .emoji { font-size: 4.5rem; display: block; margin-bottom: 20px; }
+    .message {
+      font-family: 'Chewy', cursive;
+      font-size: clamp(1.8rem, 7vw, 2.8rem);
+      color: #e76f51;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .hint {
+      font-size: 0.8rem;
+      color: #aaa;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="emoji">😇</span>
+    <div class="message">Codul câștigător e undeva pe tricou.<br/>Continuă să cauți.</div>
+    <div class="hint">// poate chiar foarte aproape //</div>
+  </div>
+</body>
+</html>

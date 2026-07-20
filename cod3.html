@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cod #3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #1a0a2e;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Mono', monospace;
+      overflow: hidden;
+      position: relative;
+    }
+    /* confetti dots */
+    body::before {
+      content: '🎊🎉🎊🎉🎊🎉🎊🎉🎊🎉';
+      position: fixed;
+      top: -20px; left: 0; right: 0;
+      font-size: 2rem;
+      letter-spacing: 1rem;
+      animation: fall 3s linear infinite;
+      opacity: 0.3;
+    }
+    @keyframes fall {
+      from { transform: translateY(-40px); }
+      to   { transform: translateY(110vh); }
+    }
+    .card {
+      text-align: center;
+      padding: 40px 32px;
+      max-width: 380px;
+      width: 92%;
+      border: 2px solid #ff006e;
+      border-radius: 4px;
+      position: relative;
+      z-index: 1;
+      animation: fadeUp 0.6s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .tag {
+      font-size: 0.55rem;
+      letter-spacing: 0.25em;
+      color: #ff006e;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .emoji { font-size: 4.5rem; display: block; margin-bottom: 20px; }
+    .message {
+      font-family: 'Bebas Neue', cursive;
+      font-size: clamp(2.2rem, 9vw, 3.5rem);
+      color: #ffffff;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+    .nothing {
+      font-size: 0.65rem;
+      color: #ff006e;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="tag">*** ANUNȚ IMPORTANT ***</div>
+    <span class="emoji">😈</span>
+    <div class="message">Felicitări!<br/>Ai câștigat...<br/>nimic.</div>
+    <div class="nothing">// absolut nimic //</div>
+  </div>
+</body>
+</html>

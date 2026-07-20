@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cod #6</title>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #fffbf0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Lato', sans-serif;
+      position: relative;
+    }
+    /* sun rays */
+    body::before {
+      content: '☀️';
+      position: fixed;
+      top: 20px; right: 20px;
+      font-size: 3rem;
+      animation: spin 8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .card {
+      text-align: center;
+      padding: 44px 32px;
+      max-width: 380px;
+      width: 92%;
+      border: 3px solid #2b2d42;
+      border-radius: 0;
+      background: white;
+      box-shadow: 8px 8px 0 #2b2d42;
+      animation: slideIn 0.5s cubic-bezier(.34,1.2,.64,1) both;
+    }
+    @keyframes slideIn {
+      from { transform: translate(-20px, 20px); opacity: 0; }
+      to   { transform: translate(0,0); opacity: 1; }
+    }
+    .emoji { font-size: 4rem; display: block; margin-bottom: 16px; }
+    .message {
+      font-family: 'Abril Fatface', cursive;
+      font-size: clamp(1.6rem, 6.5vw, 2.4rem);
+      color: #2b2d42;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .highlight {
+      color: #ef233c;
+    }
+    .sub {
+      font-size: 0.7rem;
+      color: #999;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="emoji">😈</span>
+    <div class="message">Alții se bucură<br/>de <span class="highlight">Sardinia.</span><br/>Tu scanezi tricouri!?</div>
+    <div class="sub">// soarele nu te așteaptă //</div>
+  </div>
+</body>
+</html>

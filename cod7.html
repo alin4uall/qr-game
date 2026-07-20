@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cod #7</title>
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Inconsolata:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #2d2d2d;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inconsolata', monospace;
+    }
+    .terminal {
+      max-width: 400px;
+      width: 92%;
+      background: #1a1a1a;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      animation: fadeUp 0.5s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .titlebar {
+      background: #3a3a3a;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .dot { width: 12px; height: 12px; border-radius: 50%; }
+    .dot.r { background: #ff5f57; }
+    .dot.y { background: #febc2e; }
+    .dot.g { background: #28c840; }
+    .title-text { font-size: 0.7rem; color: #888; margin-left: 8px; letter-spacing: 0.1em; }
+    .body { padding: 28px 24px; }
+    .line { color: #28c840; font-size: 0.85rem; margin-bottom: 8px; }
+    .line.dim { color: #555; }
+    .line.white { color: #e0e0e0; }
+    .big {
+      font-family: 'Boogaloo', cursive;
+      font-size: clamp(1.8rem, 7vw, 2.6rem);
+      color: #febc2e;
+      line-height: 1.2;
+      margin: 16px 0;
+    }
+    .cursor {
+      display: inline-block;
+      width: 10px; height: 1.2em;
+      background: #28c840;
+      vertical-align: middle;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <div class="titlebar">
+      <div class="dot r"></div>
+      <div class="dot y"></div>
+      <div class="dot g"></div>
+      <span class="title-text">scan_analyzer.exe</span>
+    </div>
+    <div class="body">
+      <div class="line">> analizez istoricul scanărilor...</div>
+      <div class="line dim">> cod #1... ✗</div>
+      <div class="line dim">> cod #2... ✗</div>
+      <div class="line dim">> cod #3... ✗</div>
+      <div class="big">🤡 Ai scanat 3 coduri până acum? 5? Oricum, nu acesta.</div>
+      <div class="line white">> continuă să încerci... <span class="cursor"></span></div>
+    </div>
+  </div>
+</body>
+</html>

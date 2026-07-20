@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cod #1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0d0d0d;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Mono', monospace;
+      overflow: hidden;
+    }
+    .screen {
+      text-align: center;
+      padding: 40px 32px;
+      max-width: 380px;
+      width: 92%;
+      border: 1px solid #333;
+      position: relative;
+      animation: flicker 0.15s infinite alternate;
+    }
+    @keyframes flicker {
+      from { opacity: 1; }
+      to { opacity: 0.97; }
+    }
+    .tag {
+      font-size: 0.6rem;
+      letter-spacing: 0.3em;
+      color: #444;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    .emoji { font-size: 4rem; margin-bottom: 24px; display: block; }
+    .message {
+      font-family: 'Bebas Neue', cursive;
+      font-size: clamp(2rem, 8vw, 3rem);
+      color: #e8e8e8;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      letter-spacing: 0.05em;
+    }
+    .sub {
+      font-size: 0.75rem;
+      color: #555;
+      letter-spacing: 0.15em;
+      margin-top: 32px;
+      text-transform: uppercase;
+    }
+    /* scanline effect */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="tag">COD #01 / ACCES REFUZAT</div>
+    <span class="emoji">😏</span>
+    <div class="message">Ai scanat greșit.<br/>Încearcă altul...</div>
+    <div class="sub">// mai sunt 9 coduri pe tricou //</div>
+  </div>
+</body>
+</html>

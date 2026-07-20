@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cod #22</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #1a1a1a; min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: 'Lato', sans-serif; }
+    .card { text-align: center; padding: 44px 32px; max-width: 380px; width: 92%; background: white; border-radius: 0; border-left: 8px solid #f6c90e; box-shadow: 8px 8px 0 #f6c90e; animation: slideIn 0.5s cubic-bezier(.34,1.2,.64,1) both; }
+    @keyframes slideIn { from { transform: translate(-16px, 16px); opacity: 0; } to { transform: translate(0,0); opacity: 1; } }
+    .emoji { font-size: 5rem; display: block; margin-bottom: 20px; }
+    .message { font-family: 'Oswald', sans-serif; font-size: clamp(1.6rem, 6.5vw, 2.4rem); color: #1a1a1a; line-height: 1.25; }
+    .sub { font-size: 0.7rem; color: #999; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 16px; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="emoji">😎</span>
+    <div class="message">Impresionant că ai scanat până aici. Dar tot nu ai câștigat.</div>
+    <div class="sub">// perseverență fără rezultat //</div>
+  </div>
+</body>
+</html>
