@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cod #12</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #e8f4f8; min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: 'Inconsolata', monospace; }
+    .card { text-align: center; padding: 44px 32px; max-width: 380px; width: 92%; background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.08); animation: fadeUp 0.6s ease both; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .emoji { font-size: 4.5rem; display: block; margin-bottom: 20px; }
+    .message { font-family: 'Bebas Neue', cursive; font-size: clamp(1.8rem, 7vw, 2.8rem); color: #2d3436; line-height: 1.2; margin-bottom: 16px; }
+    .counter { display: inline-block; background: #2d3436; color: white; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; padding: 6px 16px; border-radius: 20px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="emoji">🙄</span>
+    <div class="message">Al câtelea cod e ăsta? Chiar n-ai ce face?</div>
+    <span class="counter">// timpul tău, alegerea ta //</span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cod #11</title>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #fff3e0; min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: 'DM Sans', sans-serif; }
+    .card { text-align: center; padding: 44px 32px; max-width: 380px; width: 92%; background: white; border: 3px solid #ff6d00; border-radius: 0; box-shadow: 8px 8px 0 #ff6d00; animation: slideIn 0.5s cubic-bezier(.34,1.2,.64,1) both; }
+    @keyframes slideIn { from { transform: translate(-16px, 16px); opacity: 0; } to { transform: translate(0,0); opacity: 1; } }
+    .emoji { font-size: 4.5rem; display: block; margin-bottom: 20px; }
+    .message { font-family: 'Righteous', cursive; font-size: clamp(1.6rem, 6.5vw, 2.4rem); color: #1a1a1a; line-height: 1.25; margin-bottom: 16px; }
+    .sub { font-size: 0.7rem; color: #ff6d00; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="emoji">😂</span>
+    <div class="message">Nimeni nu te-a pus să scanezi, dar văd că... insiști.</div>
+    <div class="sub">// perseverență admirabilă //</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cod #14</title>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito:wght@400;800&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #fce4ec; min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: 'Nunito', sans-serif; }
+    .card { text-align: center; padding: 44px 32px; max-width: 380px; width: 92%; background: white; border-radius: 20px; box-shadow: 0 8px 32px rgba(233,30,99,0.1); animation: pop 0.6s cubic-bezier(.34,1.56,.64,1) both; }
+    @keyframes pop { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .emoji { font-size: 4.5rem; display: block; margin-bottom: 20px; }
+    .message { font-family: 'Abril Fatface', cursive; font-size: clamp(1.6rem, 6vw, 2.2rem); color: #c2185b; line-height: 1.25; margin-bottom: 16px; }
+    .sub { font-size: 0.75rem; color: #f48fb1; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="emoji">😤</span>
+    <div class="message">Premiul râde de tine undeva pe tricou.</div>
+    <div class="sub">// și tu îl lași să râdă //</div>
+  </div>
+</body>
+</html>
